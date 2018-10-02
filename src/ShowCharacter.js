@@ -18,9 +18,9 @@ class ShowCharacter extends React.Component{
   getCharacterComicInfo() {
     const URI = `/v1/public/characters/${this.props.character.id}/comics`
     const URL = `https://gateway.marvel.com:443`
-    const params = `?apikey=e2a674287cbd2b7e4916929820b966a0&ts=1538069103280&hash=a53b6090f58bc5656bb41a3fd32ff3fe`
+    const PARAMS = `?apikey=e2a674287cbd2b7e4916929820b966a0&ts=1538069103280&hash=a53b6090f58bc5656bb41a3fd32ff3fe`
 
-    axios.get(`${URL}${URI}${params}`)
+    axios.get(`${URL}${URI}${PARAMS}`)
          .then( response => {
            const comics = response.data.data.results
            this.setState({ comics })

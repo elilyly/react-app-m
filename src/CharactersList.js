@@ -34,7 +34,7 @@ class CharactersList extends React.Component{
       <div>
         <Header />
         <p>
-          <button onClick={this.handleClick}>
+          <button onClick={this.handleClick} className="sort-button">
             Sort by {this.state.ascending ? "A-Z" : "Z-A"}
           </button>
         </p>

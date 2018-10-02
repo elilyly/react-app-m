@@ -62,7 +62,7 @@ class ShowCharacter extends React.Component{
         <div className="character-info">
           {comics}
         </div>
-          <Link className='back-to-link' to='/characters/' ><h2>Back to All Characters</h2></Link>
+          <Link className='back-to-link' to='/characters/'><h2>Back to All Characters</h2></Link>
      </div>
 
     )

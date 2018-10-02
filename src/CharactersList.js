@@ -21,7 +21,7 @@ class CharactersList extends React.Component{
 
 
   render() {
-    const direction = this.state.ascending ? "asc" : "desc";
+    const direction = this.state.ascending ? "desc" : "asc";
 
     const sortedCharacters = _.orderBy(this.props.characters, ["name"], [direction, "asc"])
     const characters = sortedCharacters.map(character =>
@@ -35,7 +35,7 @@ class CharactersList extends React.Component{
         <Header />
         <p>
           <button onClick={this.handleClick}>
-            Sort by {this.state.ascending ? "Z-A" : "A-Z"}
+            Sort by {this.state.ascending ? "A-Z" : "Z-A"}
           </button>
         </p>
         <div className="character-grid">

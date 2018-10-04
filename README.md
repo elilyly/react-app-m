@@ -11,7 +11,7 @@ https://react-marvel.herokuapp.com/characters
 ## Install
 * Clone or Download project
 * cd into the project and run  `npm install`
-* To view project, run  `npm start`
+* To view project, run  `npm start` and navigate to http://localhost:3000/characters
 
 ## Functionality
 * Displays a list of Characters from the Marvel API, which can be sorted A-Z or Z-A
